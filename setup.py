@@ -1,21 +1,9 @@
 # -*- coding: utf-8 -*-
-version = '0.1.1'
+version = '0.1.2'
 description = 'A tool to build a static website for OCQM cohorts.'
 
 import os
 from setuptools import setup
-
-# to bootstrap we need to install babel manually (I'm actually kind of
-# amazed that this works without having to restart the process)
-try:
-    import babel; babel  # pyflakes
-except ImportError:
-    import pip
-    pip.main(['install', 'babel'])
-
-from babel.messages.frontend import (
-    init_catalog, update_catalog, extract_messages
-)
 
 
 def get_long_description():
@@ -42,6 +30,7 @@ setup(
     zip_safe=False,
     platforms='any',
     install_requires=[
+        'babel',
         'click',
         'mistune',
         'PyYAML',
@@ -61,10 +50,5 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Python Modules'
-    ],
-    cmdclass={
-        'extract_messages': extract_messages,
-        'init_catalog': init_catalog,
-        'update_catalog': update_catalog
-    }
+    ]
 )
