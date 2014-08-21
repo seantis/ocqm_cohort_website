@@ -70,6 +70,10 @@ def build_site(output_path):
 
     metadata = db.load_metadata()
 
+    assert metadata, """
+        No metadata was found in path {}
+    """.format(output_path)
+
     # the first language is the default language; the default language is
     # stored in the root path, others in the ./[lang] path
     languages = metadata['languages']

@@ -45,7 +45,7 @@ def demo():
 
     with paths.temporary_directory() as output:
 
-        with paths.switch_path(output):
+        with paths.switch_path(paths.get_example_path()):
             builder.build_site(output)
 
         server.run_http_server(output)

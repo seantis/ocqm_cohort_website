@@ -1,6 +1,7 @@
 import os
 
 from collections import namedtuple
+from pytest import raises
 
 from .. import builder
 from .. import paths
@@ -53,3 +54,8 @@ def test_build_demo(temp_directory):
     assert 'Demo Kohorte' in german
     assert 'mehr' in german
     assert '<li class="selected">Deutsch</li>' in german
+
+
+def test_no_metadata(temp_directory):
+    with raises(AssertionError):
+        builder.build_site(temp_directory)

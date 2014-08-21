@@ -4,7 +4,8 @@ History
 0.1.4 (unreleased)
 ~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- Fixes demo not working.
+  [href]
 
 0.1.3 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
