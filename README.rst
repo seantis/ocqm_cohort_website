@@ -6,9 +6,13 @@ A tool to build a static website for OCQM cohorts. Part of our research server t
 Installation
 ------------
 
-To use locally create a new virtual environment::
+To use locally create a new virtual environment in an empty folder::
 
-    virtualenv -p python3.4
+    virtualenv -p python3.4 .
+
+Activate the environment:
+
+    source bin/activate
 
 And install the package::
 
