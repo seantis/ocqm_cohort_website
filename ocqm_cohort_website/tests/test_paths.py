@@ -43,7 +43,7 @@ def test_copy_files(temp_directory):
         os.path.join(temp_directory, 'clone')
     )
 
-    assert os.listdir(clone_dir) == ['child', 'parent.txt']
+    assert sorted(os.listdir(clone_dir)) == ['child', 'parent.txt']
     assert os.listdir(os.path.join(clone_dir, 'child')) == ['child.txt']
 
 
