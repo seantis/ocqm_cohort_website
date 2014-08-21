@@ -1,7 +1,7 @@
 History
 -------
 
-0.1.4 (unreleased)
+0.1.4 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
 
 - Fixes demo not working.
