@@ -1,10 +1,11 @@
 History
 -------
 
-0.1.5 (unreleased)
+0.1.5 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- No longer compile the catalog on the fly.
+  [href]
 
 0.1.4 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
