@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-version = '0.2'
+version = '0.1.1'
 description = 'A tool to build a static website for OCQM cohorts.'
 
 import os
@@ -29,7 +29,7 @@ def get_long_description():
 
 
 setup(
-    name='ocqm_cohort_site',
+    name='ocqm_cohort_website',
     version=version,
     url='https://github.com/seantis/ocqm_cohort_website',
     license='MIT',
@@ -50,7 +50,7 @@ setup(
     extras_require={},
     entry_points={
         'console_scripts': [
-            'ocqm-cohort-site = ocqm_cohort_website.scripts:commands'
+            'ocqm-cohort-website = ocqm_cohort_website.scripts:commands'
         ]
     },
     classifiers=[

@@ -1,6 +1,6 @@
-# German translations for ocqm_cohort_site.
+# German translations for ocqm_cohort_website.
 # Copyright (C) 2014 ORGANIZATION
-# This file is distributed under the same license as the ocqm_cohort_site
+# This file is distributed under the same license as the ocqm_cohort_website
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
