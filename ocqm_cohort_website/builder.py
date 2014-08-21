@@ -12,9 +12,6 @@ from . import paths
 
 def create_environment(theme_path, language):
 
-    if language != 'en':
-        locale.compile_catalog(language)
-
     loader = FileSystemLoader(searchpath=theme_path, encoding='utf-8')
     environment = Environment(loader=loader, extensions=['jinja2.ext.i18n'])
 

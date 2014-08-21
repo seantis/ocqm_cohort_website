@@ -72,7 +72,11 @@ To update the catalog::
 
     python setup.py update_catalog
 
-The mo files are automatically compiled at runtime.
+To compile the catalog::
+
+    python setup.py compile_catalog
+
+Updating and compiling the catalog is required every time a text changes!
 
 License
 -------

@@ -1,17 +1,4 @@
 from babel import Locale
-from babel.messages import frontend
-from .paths import get_locale_path
-
-
-def compile_catalog(language):
-    from distutils.dist import Distribution
-
-    compiler = frontend.compile_catalog(Distribution())
-    compiler.initialize_options()
-    compiler.directory = get_locale_path()
-    compiler.locale = language
-    compiler.finalize_options()
-    compiler.run()
 
 
 def get_language_name(language):
