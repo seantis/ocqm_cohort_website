@@ -1,5 +1,8 @@
 import os
 import shutil
+import tempfile
+
+from contextlib import contextmanager
 
 
 def get_module_path():
@@ -42,3 +45,20 @@ def ensure_directory(path):
         os.mkdir(path)
     else:
         assert os.path.isdir(path)
+
+
+@contextmanager
+def switch_path(path):
+    current_folder = os.getcwd()
+    os.chdir(path)
+    yield
+    os.chdir(current_folder)
+
+
+@contextmanager
+def temporary_directory():
+    directory = tempfile.mkdtemp()
+
+    yield directory
+
+    shutil.rmtree(directory)

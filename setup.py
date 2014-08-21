@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-version = '0.1.2'
+version = '0.1.3'
 description = 'A tool to build a static website for OCQM cohorts.'
 
 import os

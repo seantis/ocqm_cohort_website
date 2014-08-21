@@ -2,37 +2,15 @@ from __future__ import print_function
 
 import click
 import os
-import shutil
-import tempfile
 
 from . import builder
 from . import paths
+from . import server
 
 
 @click.group()
 def cli():
     pass
-
-
-def run_http_server(folder):
-
-    os.chdir(folder)
-
-    import SimpleHTTPServer
-    import SocketServer
-
-    class Daemon(SocketServer.TCPServer):
-        allow_reuse_address = True
-
-    PORT = 8000
-
-    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-    httpd = Daemon(("127.0.0.1", PORT), Handler)
-
-    print ("serving at port", PORT)
-
-    httpd.serve_forever()
-    httpd.shutdown()
 
 
 @cli.command()
@@ -58,25 +36,19 @@ def build(output, serve):
     builder.build_site(output)
 
     if serve:
-        run_http_server(output)
+        server.run_http_server(output)
 
 
 @cli.command()
 def demo():
     """ Build the example and show it in the browser. """
 
-    current_dir = os.getcwd()
+    with paths.temporary_directory() as output:
 
-    try:
-        output = tempfile.mkdtemp()
+        with paths.switch_path(output):
+            builder.build_site(output)
 
-        os.chdir(paths.get_example_path())
-        builder.build_site(output)
-
-        run_http_server(output)
-    finally:
-        os.chdir(current_dir)
-        shutil.rmtree(output)
+        server.run_http_server(output)
 
 
 @cli.command()

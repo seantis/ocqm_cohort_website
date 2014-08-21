@@ -1,16 +1,10 @@
-import os
 import pytest
-import shutil
-import tempfile
+
+from .. import paths
 
 
 @pytest.yield_fixture()
 def temp_directory():
-    temp = tempfile.mkdtemp()
-    current = os.getcwd()
-
-    os.chdir(temp)
-    yield temp
-    os.chdir(current)
-
-    shutil.rmtree(temp)
+    with paths.temporary_directory() as temp:
+        with paths.switch_path(temp):
+            yield temp

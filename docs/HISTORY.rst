@@ -1,6 +1,12 @@
 History
 -------
 
+0.1.3 (2014-08-21)
+~~~~~~~~~~~~~~~~~~
+
+- Fixes http server not working under Python 3.
+  [href]
+
 0.1.2 (2014-08-21) 
 ~~~~~~~~~~~~~~~~~~
 

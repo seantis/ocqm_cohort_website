@@ -56,3 +56,14 @@ def test_ensure_directory(temp_directory):
 
     paths.ensure_directory(directory)
     assert os.path.exists(directory)
+
+
+def test_switch_paths(temp_directory):
+    os.mkdir('test')
+
+    assert os.getcwd().endswith(temp_directory)
+
+    with paths.switch_path('test'):
+        assert os.getcwd().endswith('test')
+
+    assert os.getcwd().endswith(temp_directory)
