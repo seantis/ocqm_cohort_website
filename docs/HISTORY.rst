@@ -4,7 +4,7 @@ History
 0.1.6 (unreleased)
 ~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- Rounded corners banner image for the top only
 
 0.1.5 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
