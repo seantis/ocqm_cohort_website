@@ -1,7 +1,7 @@
 History
 -------
 
-0.1.6 (unreleased)
+0.1.6 (2014-08-25)
 ~~~~~~~~~~~~~~~~~~
 
 - Fixed bad nesting of langauges. Closes #1.
