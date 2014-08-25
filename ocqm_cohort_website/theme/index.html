@@ -24,7 +24,7 @@
                     {% if language == page.default_language %}
                         <li><a href="../{{ page.id }}.html">{{ get_language_name(language) }}</a></li>
                     {% else %}
-                        <li><a href="{{ language }}/{{ page.id }}.html">{{ get_language_name(language) }}</a></li>
+                        <li><a href="../{{ language }}/{{ page.id }}.html">{{ get_language_name(language) }}</a></li>
                     {% endif %}
                 {% endif %}
                 </li>

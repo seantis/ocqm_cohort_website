@@ -63,9 +63,9 @@ def build_breadcrumbs(pages, current_page):
         )
 
 
-def build_site(output_path):
+def build_site(output_path, metadata={}):
 
-    metadata = db.load_metadata()
+    metadata = metadata or db.load_metadata()
 
     assert metadata, """
         No metadata was found in path {}
@@ -82,11 +82,14 @@ def build_site(output_path):
 
     for language in languages:
 
-        # create the correct directory if necessary
-        if language != default_language:
-            output_path = os.path.join(output_path, language)
+        # put the default language in the root folder, the other languages in
+        # sub-folders
+        if language == default_language:
+            language_output_path = output_path
+        else:
+            language_output_path = os.path.join(output_path, language)
 
-        paths.ensure_directory(output_path)
+        paths.ensure_directory(language_output_path)
 
         # load the cohort
         cohort = content.Cohort(metadata, languages, language)
@@ -107,7 +110,7 @@ def build_site(output_path):
         # render the templates
         render(
             theme_path=paths.get_theme_path(),
-            output_path=output_path,
+            output_path=language_output_path,
             language=language,
             shared_context={
                 'cohort': cohort,
@@ -122,4 +125,4 @@ def build_site(output_path):
         else:
             include_paths = (paths.get_static_path(), )
 
-        include_paths_in_output(include_paths, output_path)
+        include_paths_in_output(include_paths, language_output_path)

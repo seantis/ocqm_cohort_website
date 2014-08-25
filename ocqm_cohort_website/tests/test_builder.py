@@ -32,8 +32,8 @@ def test_build_breadcrumbs():
 
 
 def test_build_demo(temp_directory):
-    os.chdir(paths.get_example_path())
-    builder.build_site(temp_directory)
+    with paths.switch_path(paths.get_example_path()):
+        builder.build_site(temp_directory)
 
     os.path.exists(os.path.join(temp_directory, 'index.html'))
     os.path.exists(os.path.join(temp_directory, 'media'))
@@ -54,6 +54,33 @@ def test_build_demo(temp_directory):
     assert 'Demo Kohorte' in german
     assert 'mehr' in german
     assert '<li class="selected">Deutsch</li>' in german
+
+
+def test_language_nesting(temp_directory):
+    metadata = {
+        'languages': ['en', 'de', 'fr'],
+        'pages': [
+            {'id': 'index', 'title': 'Index'},
+            {'id': '1', 'title': 'One'},
+            {'id': '2', 'title': 'Two'},
+            {'id': '3', 'title': 'Three'},
+            {'id': '4', 'title': 'Four'}
+        ]
+    }
+
+    builder.build_site(temp_directory, metadata)
+
+    assert 'de' in os.listdir(temp_directory)
+    assert 'fr' in os.listdir(temp_directory)
+    assert 'index.html' in os.listdir(temp_directory)
+
+    assert 'de' not in os.listdir(os.path.join(temp_directory, 'de'))
+    assert 'fr' not in os.listdir(os.path.join(temp_directory, 'de'))
+    assert 'index.html' in os.listdir(os.path.join(temp_directory, 'de'))
+
+    assert 'de' not in os.listdir(os.path.join(temp_directory, 'fr'))
+    assert 'fr' not in os.listdir(os.path.join(temp_directory, 'fr'))
+    assert 'index.html' in os.listdir(os.path.join(temp_directory, 'fr'))
 
 
 def test_no_metadata(temp_directory):

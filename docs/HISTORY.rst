@@ -4,7 +4,11 @@ History
 0.1.6 (unreleased)
 ~~~~~~~~~~~~~~~~~~
 
-- Rounded corners banner image for the top only
+- Fixed bad nesting of langauges. Closes #1.
+  [href]
+
+- Rounded corners banner image for the top only.
+  [freinhard]
 
 0.1.5 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
