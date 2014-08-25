@@ -4,7 +4,8 @@ History
 0.1.7 (unreleased)
 ~~~~~~~~~~~~~~~~~~
 
-Nothingy yet.
+- Make sure the *.mo files are included in the release package.
+  [href]
 
 0.1.6 (2014-08-25)
 ~~~~~~~~~~~~~~~~~~
