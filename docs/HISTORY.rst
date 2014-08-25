@@ -1,7 +1,7 @@
 History
 -------
 
-0.1.7 (unreleased)
+0.1.7 (2014-08-25)
 ~~~~~~~~~~~~~~~~~~
 
 - Make sure the *.mo files are included in the release package.
