@@ -11,6 +11,16 @@ under the name 'chart.png'.
 
 ![Example chart](./media/images/chart.png)
 
+## Lists
+
+- Simple unordered list 
+- With three items
+- And the last item
+
+
+1. The ordered List
+2. With two items
+
 ## Attachments
 
 You can store your files anywhere under `media` and reference them by using
