@@ -81,7 +81,7 @@ pages:
       de: Patienten
     description:
       en: Patients are closely monitored during the study.
-      de: Patienten werden während der Studie genaustens beobachted.
+      de: Patienten werden während der Studie genaustens beobachtet.
   - id: research
     banner: ./media/images/research.jpg
     title:
