@@ -1,11 +1,19 @@
 History
 -------
 
+0.1.9 (unreleased)
+~~~~~~~~~~~~~~~~~~
+
+Nothing yet.
+
 0.1.8 (2014-09-19)
 ~~~~~~~~~~~~~~~~~~
 
-- Fixed typo in German example text [freinhard]
-- Added list styling including example list [freinhard]
+- Fixed typo in German example text.
+  [freinhard]
+
+- Added list styling including example list.
+  [freinhard]
 
 0.1.7 (2014-08-25)
 ~~~~~~~~~~~~~~~~~~
