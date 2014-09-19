@@ -1,10 +1,25 @@
 History
 -------
 
-0.1.6 (unreleased)
+0.1.8 (unreleased)
 ~~~~~~~~~~~~~~~~~~
 
-- Rounded corners banner image for the top only
+Nothing yet.
+
+0.1.7 (2014-08-25)
+~~~~~~~~~~~~~~~~~~
+
+- Make sure the *.mo files are included in the release package.
+  [href]
+
+0.1.6 (2014-08-25)
+~~~~~~~~~~~~~~~~~~
+
+- Fixed bad nesting of langauges. Closes #1.
+  [href]
+
+- Rounded corners banner image for the top only.
+  [freinhard]
 
 0.1.5 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
