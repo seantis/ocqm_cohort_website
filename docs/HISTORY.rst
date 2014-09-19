@@ -1,10 +1,11 @@
 History
 -------
 
-0.1.8 (unreleased)
+0.1.8 (2014-09-19)
 ~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- Fixed typo in German example text [freinhard]
+- Added list styling including example list [freinhard]
 
 0.1.7 (2014-08-25)
 ~~~~~~~~~~~~~~~~~~
@@ -39,7 +40,7 @@ Nothing yet.
 - Fixes http server not working under Python 3.
   [href]
 
-0.1.2 (2014-08-21) 
+0.1.2 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
 
 - Properly include babel commands in setup.py.
@@ -48,7 +49,7 @@ Nothing yet.
 - Make sure all files are included in the package.
   [href]
 
-0.1.1 (2014-08-21) 
+0.1.1 (2014-08-21)
 ~~~~~~~~~~~~~~~~~~
 
 - Renames remaining ocqm_cohort_site references to ocqm_cohort_website.
