@@ -5,16 +5,19 @@ The cohorte is ruled by three different committees: the scientific committee, th
 ## Steering Committee
 *The steering committee defines the strategic orientation and the development of the cohort*.
 
+<img alt="Hans Castrop" src="./media/images/businessman.jpg" class="portrait"> **Hans Castorp** (M.A. UZH) <br />
+Managing Director, Medical Doctor
+
+<user@example.com>
+<div class="end-portrait"></div>
+
 <img alt="Anna Krenina" src="./media/images/woman.jpg" class="portrait"> **Anna Karenina** (MD)
+
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  At vero eos et accusam et justo duo dolores et ea rebum.
 <div class="end-portrait"></div>
 
 <img alt="Buck Mulligan" src="./media/images/hipster.jpg" class="portrait"> **Dr. Buck Mulligan** (Dipl. Inform. UZH) 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-<div class="end-portrait"></div>
-
-<img alt="Hans Castrop" src="./media/images/businessman.jpg" class="portrait"> **Hans Castorp** (M.A. UZH) 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 <div class="end-portrait"></div>
 
 ## Scientific Committee

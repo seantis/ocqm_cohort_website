@@ -4,7 +4,7 @@ History
 0.1.10 (unreleased)
 ~~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- Adds example profile content incl. email address
 
 0.1.9 (2014-09-22)
 ~~~~~~~~~~~~~~~~~~
