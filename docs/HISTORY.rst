@@ -1,10 +1,14 @@
 History
 -------
 
-0.1.9 (unreleased)
+0.1.9 (2014-09-22)
 ~~~~~~~~~~~~~~~~~~
 
-Nothing yet.
+- Adds ability to define a list of portraits.
+  [freinhard]
+
+- Adds more example content.
+  [freinhard]
 
 0.1.8 (2014-09-19)
 ~~~~~~~~~~~~~~~~~~
