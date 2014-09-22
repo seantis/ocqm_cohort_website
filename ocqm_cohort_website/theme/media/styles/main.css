@@ -55,6 +55,19 @@ img {
 	border-radius: 2px;
 }
 
+img.portrait {
+	clear: left;
+	float: left;
+	width: 90px;
+	height: 90px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+div.end-portrait {
+	clear: both;
+}
+
 .breadcrumb {
 	background: #fff;
 	border-bottom: 1px solid #e4edff;
